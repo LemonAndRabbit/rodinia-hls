@@ -1,4 +1,4 @@
-# rodina-hls
+# rodinia-hls
 
 ## Notes 
 
