@@ -23,6 +23,7 @@ extern "C"{
         COMPUTE_LOOP: for(int j=0; j<TILE_SIZE/WIDTH_FACTOR; j++){
         #pragma HLS UNROLL
             INNER_COMPUTER_LOOP: for(int k=0; k<WIDTH_FACTOR; k++){
+            #pragma HLS PIPELINE    
                 int k_idx = k*32;
                 uint32_t element_A = buffer_A[j].range(k_idx+31, k_idx);
                 uint32_t element_B = buffer_B[j].range(k_idx+31, k_idx);
