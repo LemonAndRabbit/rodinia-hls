@@ -21,7 +21,7 @@ extern "C"{
                     INTERFACE_WIDTH buffer_C[TILE_SIZE/WIDTH_FACTOR]){
         if(flag)                
         COMPUTE_LOOP: for(int j=0; j<TILE_SIZE/WIDTH_FACTOR; j++){
-        #pragma HLS PIPELINE
+        #pragma HLS UNROLL
             INNER_COMPUTER_LOOP: for(int k=0; k<WIDTH_FACTOR; k++){
             #pragma HLS UNROLL
                 int k_idx = k*32;
