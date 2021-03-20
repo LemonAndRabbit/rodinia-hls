@@ -173,13 +173,6 @@ __kernel void workload(float result[GRID_ROWS * GRID_COLS], float imgvf[GRID_ROW
     float I_inner_2  [TILE_ROWS * GRID_COLS];
 #pragma HLS array_partition variable=I_inner_2  cyclic factor=16
 
-    float result_inner_3 [TILE_ROWS * GRID_COLS];
-#pragma HLS array_partition variable=result_inner_3 cyclic factor=16
-    float imgvf_inner_3   [(TILE_ROWS + 2) * GRID_COLS];
-#pragma HLS array_partition variable=imgvf_inner_3   cyclic factor=16
-    float I_inner_3  [TILE_ROWS * GRID_COLS];
-#pragma HLS array_partition variable=I_inner_3  cyclic factor=16
-
     int i , r , c;
     int k;
 
