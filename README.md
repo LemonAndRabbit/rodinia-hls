@@ -8,7 +8,7 @@ Extended support for vadd algorithm, under directory [Benchmarks/vadd](Benchmark
 
 ### Update 2021.3.20
 
-Added newly implemented MGVF algorithm in [Benchmarks/leukocyte/my_mgvf](Benchmarks/Benchmarks/leukocyte/my_mgvf)
+Added newly implemented MGVF algorithm in [Benchmarks/leukocyte/my_mgvf](Benchmarks/leukocyte/my_mgvf)
 
 Changes to the original MGVF implementation:
 
@@ -21,7 +21,7 @@ Changes to the original MGVF implementation:
 + **Host OS**
   + Ubuntu 20.04.1
 
-+ **TARGET FPGA** 
++ **Target FPGA** 
   + Xilinx Alveo U50: xilinx_u50_gen3x16_xdma_201920_3
 
 + **Software Tools**
